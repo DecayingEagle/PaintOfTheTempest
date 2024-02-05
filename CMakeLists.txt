@@ -5,10 +5,14 @@ set(CMAKE_CXX_STANDARD 23)
 
 find_package(OpenGL REQUIRED)
 
-add_executable(paintofthetempest src/main.cpp
+add_executable(
+        ${PROJECT_NAME}
+        src/main.cpp
         src/config.h
-        src/glad.c)
+        src/main.h
+        src/glad.c
+)
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/dependencies)
 
-target_link_libraries(paintofthetempest glfw OpenGL::GL)
+target_link_libraries(${PROJECT_NAME} glfw OpenGL::GL)
