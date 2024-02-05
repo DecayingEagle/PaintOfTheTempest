@@ -1,0 +1,3 @@
+/home/lena/CLionProjects/paintofthetempest/cmake-build-debug/CMakeFiles/paintofthetempest.dir
+/home/lena/CLionProjects/paintofthetempest/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/lena/CLionProjects/paintofthetempest/cmake-build-debug/CMakeFiles/rebuild_cache.dir
