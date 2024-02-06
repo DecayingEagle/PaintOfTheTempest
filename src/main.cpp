@@ -37,8 +37,8 @@ int main()
     return 0;
 }
 
-
-uint make_shader(const std::string& vertex_filepath, const std::string& fragment_filepath)
+// TODO: explain the noexcept
+uint make_shader(const std::string& vertex_filepath, const std::string& fragment_filepath) noexcept
 {
     std::vector<uint> modules;
     modules.push_back(make_module(vertex_filepath, GL_VERTEX_SHADER));
@@ -68,7 +68,8 @@ uint make_shader(const std::string& vertex_filepath, const std::string& fragment
     return shader;
 }
 
-uint make_module(const std::string& filepath, uint module_type)
+// TODO: explain the noexcept
+uint make_module(const std::string& filepath, uint module_type) noexcept
 {
     std::ifstream file;
     std::stringstream bufferedLines;
