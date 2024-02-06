@@ -56,12 +56,12 @@ build CMakeFiles/paintofthetempest.dir/src/main.cpp.o: CXX_COMPILER__paintofthet
   OBJECT_DIR = CMakeFiles/paintofthetempest.dir
   OBJECT_FILE_DIR = CMakeFiles/paintofthetempest.dir/src
 
-build CMakeFiles/paintofthetempest.dir/src/glad.c.o: C_COMPILER__paintofthetempest_unscanned_Debug /home/lena/CLionProjects/paintofthetempest/src/glad.c || cmake_object_order_depends_target_paintofthetempest
-  DEP_FILE = CMakeFiles/paintofthetempest.dir/src/glad.c.o.d
+build CMakeFiles/paintofthetempest.dir/dependencies/glad/glad.c.o: C_COMPILER__paintofthetempest_unscanned_Debug /home/lena/CLionProjects/paintofthetempest/dependencies/glad/glad.c || cmake_object_order_depends_target_paintofthetempest
+  DEP_FILE = CMakeFiles/paintofthetempest.dir/dependencies/glad/glad.c.o.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -I/home/lena/CLionProjects/paintofthetempest/dependencies
   OBJECT_DIR = CMakeFiles/paintofthetempest.dir
-  OBJECT_FILE_DIR = CMakeFiles/paintofthetempest.dir/src
+  OBJECT_FILE_DIR = CMakeFiles/paintofthetempest.dir/dependencies/glad
 
 
 # =============================================================================
@@ -71,7 +71,7 @@ build CMakeFiles/paintofthetempest.dir/src/glad.c.o: C_COMPILER__paintofthetempe
 #############################################
 # Link the executable paintofthetempest
 
-build paintofthetempest: CXX_EXECUTABLE_LINKER__paintofthetempest_Debug CMakeFiles/paintofthetempest.dir/src/main.cpp.o CMakeFiles/paintofthetempest.dir/src/glad.c.o | /usr/lib/libGLX.so /usr/lib/libOpenGL.so
+build paintofthetempest: CXX_EXECUTABLE_LINKER__paintofthetempest_Debug CMakeFiles/paintofthetempest.dir/src/main.cpp.o CMakeFiles/paintofthetempest.dir/dependencies/glad/glad.c.o | /usr/lib/libGLX.so /usr/lib/libOpenGL.so
   FLAGS = -g
   LINK_LIBRARIES = -lglfw  /usr/lib/libGLX.so  /usr/lib/libOpenGL.so
   OBJECT_DIR = CMakeFiles/paintofthetempest.dir

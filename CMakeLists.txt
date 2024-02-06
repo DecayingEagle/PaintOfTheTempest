@@ -10,7 +10,7 @@ add_executable(
         src/main.cpp
         src/config.h
         src/main.h
-        src/glad.c
+        dependencies/glad/glad.c
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/dependencies)
